@@ -7,7 +7,7 @@ def game():
     list_length = len(list(word))
     blank_list = ["_"] * list_length
     jeez = [""]
-    print("Welcome to hangman, you have "+ str(list_length)+ " attempts to guess the word")
+    print("Welcome to hangman, you have "+ str(list_length)+ " attempts to guess the word!")
 
     attempts = []
     x = 0
