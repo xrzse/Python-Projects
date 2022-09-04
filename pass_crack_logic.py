@@ -7,5 +7,5 @@ for x in range(9999):
     print("Attempt: " + str(start))
     if start == password:
         print("The password is " + str(start))
-        time.sleep(10)
+        break
 
