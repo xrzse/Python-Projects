@@ -6,6 +6,8 @@ def calc(current_hour, current_minute, current_period, future_hour, future_minut
         hours_left = 24 - current_hour
     elif current_period == future_period and current_hour == 12 and future_hour != 12:
         hours_left = future_hour
+    elif current_period == future_period and current_hour == 12 and future_hour == 12 and future_minute < current_minute:
+        hours_left = 24
     elif current_period == future_period and future_hour > current_hour:
         hours_left = future_hour - current_hour
     elif current_period == future_period and current_hour > future_hour:
