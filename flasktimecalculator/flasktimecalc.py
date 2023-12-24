@@ -47,8 +47,9 @@ def hello():
         current_time = request.form['current_time']
         future_time = request.form['future_time']
         result = timecalc(current_time, future_time)
+        return render_template('home.html', result=result)
     
-    return render_template('home.html', result=result)
+    return render_template('home.html')
 
 @app.route("/results")
 def results():
