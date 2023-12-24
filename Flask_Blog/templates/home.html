@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TimeCalculator</title>
+    <style>
+        body {
+            background-color: #3a3842;
+            text-align: center; /* Center the content horizontally */
+        }
+
+        h1, h3, label, input {
+            color: white;
+        }
+
+        form {
+            display: inline-block; /* Align the form in the center */
+            text-align: left; /* Reset text alignment within the form */
+        }
+    </style>
+</head>
+<body>
+    <h1>Time Calculator</h1>
+    <h3>Fill in the information below</h3>
+
+    <form method="POST" action="/">
+        <div>
+            <label for="current_time">Current Time: </label>
+            <input type="text" id="current_time" name="current_time" placeholder="6:45 PM" required>
+        </div>
+
+        <div>
+            <label for="future_time">Future Time: </label>
+            <input type="text" id="future_time" name="future_time" placeholder="11:45 PM" required>
+        </div>
+        <br>
+        <div>
+            <input type="reset" style="color: black">
+            <input type="submit" value="Calculate" style="color: black">
+        </div>
+    </form>
+
+    {% if result %}
+    <h3>{{ result }}</h3>
+    {% endif %}
+    
+</body>
+</html>
