@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To Do List</title>
+        <style>
+            body {
+                font-size: large;
+                font-family: Verdana;
+                background-color: #E9F1FA;
+                text-align: center;
+            }
+            h1, h2, h3 {
+                color: #2C3E50
+            }
+            input[type=text] {
+                width: 65%;
+                padding: 8px 12px;
+                border: none;
+                background-color: #E9F1FA;
+                border-bottom: 2px solid #2C3E50;
+            }
+            input[type=text]:focus {
+                border: none;
+                background-color: #E9F1FA;
+            }
+            hr {
+                width: 75%;
+                height: 1px;
+                color: #2C3E50;
+                background-color: #2C3E50;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <hr>
+        <h2>To Do List</h2>
+        <hr>
+        <br>
+        <form method = "POST" action="/">
+            <div>
+                <input type="text" id = "task_input" name = "task_input" placeholder="Input your task here">
+            </div>
+            <br>
+
+        </form>
+
+    </body>
+</html>
