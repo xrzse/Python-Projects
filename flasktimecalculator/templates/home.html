@@ -3,36 +3,43 @@
 <head>
     <title>TimeCalculator</title>
     <style>
-        body {
+        body{
+            font-size: larger;
+            font-family: Verdana;
             background-color: #3a3842;
-            text-align: center; /* Center the content horizontally */
+            text-align: center;
         }
 
-        h1, h3, label, input {
+        h1, h3, label {
             color: white;
         }
 
+        input {
+            color:black;
+        }
+
         form {
-            display: inline-block; /* Align the form in the center */
-            text-align: left; /* Reset text alignment within the form */
+            display: inline-block;
+            text-align: left; 
         }
     </style>
 </head>
 <body>
     <h1>Time Calculator</h1>
-    <h3>Fill in the information below</h3>
 
     <form method="POST" action="/">
         <div>
             <label for="current_time">Current Time: </label>
-            <input type="text" id="current_time" name="current_time" placeholder="6:45 PM" required>
-        </div>
-
-        <div>
-            <label for="future_time">Future Time: </label>
-            <input type="text" id="future_time" name="future_time" placeholder="11:45 PM" required>
+            <input type="text" id="current_time" name="current_time" placeholder="e.g 6:45 PM" required size = "50">
         </div>
         <br>
+        <div>
+            <label for="future_time">Future Time: </label>
+            <input type="text" id="future_time" name="future_time" placeholder="e.g 11:45 PM" required size = "50">
+        </div>
+
+        <br>
+
         <div>
             <input type="reset" style="color: black">
             <input type="submit" value="Calculate" style="color: black">
