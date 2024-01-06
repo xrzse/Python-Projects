@@ -39,5 +39,4 @@ class BookspiderSpider(scrapy.Spider):
             'category': response.xpath("//ul[@class='breadcrumb']/li[@class='active']/preceding-sibling::li[1]/a/text()").get(),
             'description': response.xpath("//div[@id='product_description']/following-sibling::p/text()").get(),
             'price': response.css('.product_main p.price_color::text').get()
-
         }
