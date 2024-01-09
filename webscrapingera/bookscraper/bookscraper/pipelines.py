@@ -64,5 +64,6 @@ class BookscraperPipeline:
         
         return item
         
-        
-        
+
+class SaveToMySQLPipeLine:
+
