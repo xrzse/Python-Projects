@@ -63,7 +63,3 @@ class BookscraperPipeline:
             adapter['stars'] = 5
         
         return item
-        
-
-class SaveToMySQLPipeLine:
-
