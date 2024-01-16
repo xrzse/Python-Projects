@@ -1,13 +1,17 @@
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-
-
-# useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
-
 class QuotescraperPipeline:
+
     def process_item(self, item, spider):
+        adapter = ItemAdapter(item)
+
+        # Modify the 'quote' field
+        quote = adapter.get('quote')
+        adapter['quote'] = quote.strip()
+
+        # Modify the 'author' field
+        author = adapter.get('author')
+        if author:
+            adapter['author'] = author.strip()
+
         return item
