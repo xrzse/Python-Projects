@@ -1,0 +1,20 @@
+Write a function to open a text file using a filename passed as an argument and then count the
+occurrences of the words “spam” and “eggs” in the file and return these counts at the end of the
+program. You should also count non-lower-case versions of the words like “Spam” or “eGGs”. If the
+file does not exist, return False.
+Write a function to open a text file using a filename passed as an argument and then count the
+occurrences of the words “spam” and “eggs” in the file and return these counts at the end of the
+program. You should also count non-lower-case versions of the words like “Spam” or “eGGs”. If the
+file does not exist, return False.
+Write a function to open a text file using a filename passed as an argument and then count the
+occurrences of the words “spam” and “eggs” in the file and return these counts at the end of the
+program. You should also count non-lower-case versions of the words like “Spam” or “eGGs”. If the
+file does not exist, return False. spam spam spam spam
+Write a function to open a text file using a filename passed as an argument and then count the
+occurrences of the words “spam” and “eggs” in the file and return these counts at the end of the
+program. You should also count non-lower-case versions of the words like “Spam” or “eGGs”. If the
+file does not exist, return False.
+Write a function to open a text file using a filename passed as an argument and then count the
+occurrences of the words “spam” and “eggs” in the file and return these counts at the end of the
+program. You should also count non-lower-case versions of the words like “Spam” or “eGGs”. If the
+file does not exist, return False.
